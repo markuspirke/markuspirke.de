@@ -10,6 +10,7 @@ aliases = ["about" ,"contact"]
 
 
 I'm currently pursuing a PhD in astroparticle physics at the Erlangen Centre for Astroparticle Physics. My main interests lie in gamma-ray astrophysics, software development (with a fondness for the Julia programming language), and teaching physics.
-Alongside my research, I'm training as a system administrator — a hands-on role that keeps things interesting. I'm also passionate about smart home technologies in my spare time.
 
-And when things get a bit too much, I head for the mountains — ideally in Switzerland.
+Alongside my research, I support our institute as an aspiring system administrator. And whenever everything becomes a bit too much, I head for the mountains — whether it’s mountaineering in the high peaks of Switzerland or leisurely hiking in the foothills.
+
+Connected to my love for the mountains is a second passion of mine, one that’s directly tied to the changes in the Alpine ecosystem: climate physics. In the Alps, the effects of human-caused climate change are clearly noticeable, as the impacts are unfortunately much more pronounced here than the global average. That’s one of the reasons why I spend much of my free time engaged with this topic and the related issue of the energy transition toward renewable energy sources.

@@ -121,3 +121,7 @@ theme        = "hello-friend-ng"
       identifier = "blog"
       name       = "Blog"
       url        = "/general/"
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'

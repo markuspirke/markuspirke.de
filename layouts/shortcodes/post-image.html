@@ -1,0 +1,19 @@
+{{ $img := .Get "image" }}
+{{ $width := .Get "width" }}
+{{ $height := .Get "height" }}
+{{ $image := .Page.Resources.GetMatch $img }}
+{{ $resized := $image }}
+
+{{ if not $image }}
+<p><strong>Image not found!!!</strong></p>
+{{ else }}
+  {{ if and $width $height }}
+    {{ $resized := $image.Resize (printf "%sx%s" $width $height) }}
+  {{ else if $width }}
+    {{ $resized := $image.Resize (printf "%sx" $width) }}
+  {{ else }}
+    {{ $resized := $image }}
+  {{ end }}
+  <img src="{{ $resized.RelPermalink }}" alt="Test" width="{{ $width }}" height="{{ $height }}">
+{{ end }}
+

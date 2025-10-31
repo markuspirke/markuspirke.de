@@ -1,0 +1,123 @@
+baseurl      = "localhost"
+title        = "My Blog"
+theme        = "hello-friend-ng"
+# paginate     = 10
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  # Subtitle for home
+  # homeSubtitle = "Wenn ich was mach, mach ich's gescheid. (Laura Dahlmeier)"
+  homeSubtitle = "If we were intelligent, we wouldn't be destroying our planet, our only home. (Jane Goodall)"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  enableThemeToggle = true
+  # Enable sharing buttons, if you like
+  enableSharingButtons = true
+  enableEmoji = true
+  
+  # Show a global language switcher in the navigation bar
+  enableGlobalLanguageMenu = true
+  defaultContentLanguage = 'de'
+
+  avatar = "images/profile.jpg"
+
+  # Math support
+  math = true
+
+  # Metadata mostly used in document's head
+  description = "My new homepage or blog"
+  keywords = "homepage, blog"
+  images = ["profile.jpg"]
+
+  # [params.portrait]
+  #     path     = "/img/me.jpg"
+  #     alt      = "Portrait"
+  #     maxWidth = "300px"
+
+  [params.author]
+      name     = "Markus Pirke"
+
+# this set the line at the bottom of the site
+  [params.footer]
+      trademark  = 2024
+      rss        = true
+      copyright  = true
+      author     = false
+
+      topText = []
+      bottomText = [
+	      "Powered by <a href=\"http://gohugo.io\">Hugo</a>",
+	      "Made with &#10084; by <a href=\"https://github.com/markuspirke\">Markus Pirke</a>"
+	    ]
+
+  [[params.social]]
+      name = "github"
+      url  = "https://github.com/markuspirke"
+
+  [[params.social]]
+      name = "email"
+      url  = "markus.pirke@fau.de"
+
+  [[params.social]]
+      name = "linkedin"
+      url  = "https://www.linkedin.com/in/markus-pirke-867782251"
+[taxonomies]
+    category = "blog"
+    tag      = "tags"
+    series   = "series"
+
+[languages]
+  [languages.de]
+    languageCode = "de"
+    title = "Markus Pirke"
+    keywords = ""
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    readOtherPosts = "Read other posts"
+
+  [languages.de.params]
+    subtitle  = "A simple theme for Hugo"
+
+    [languages.de.params.logo]
+      logoText = "cd $HOME"
+      logoHomeLink = "/de"
+
+  [languages.de.menu]
+    [[languages.de.menu.main]]
+      identifier = "about"
+      name       = "Über mich"
+      url        = "/about/"
+
+    [[languages.de.menu.main]]
+      identifier = "blog"
+      name       = "Blog"
+      url        = "/general/"
+
+  [languages.en]
+    languageCode = "en-us"
+    title = "Markus Pirke"
+    keywords = ""
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    readOtherPosts = "Read other posts"
+
+  [languages.en.params]
+    subtitle  = "A simple theme for Hugo"
+
+    [languages.en.params.logo]
+      logoText = "cd $HOME"
+      logoHomeLink = "/en"
+  [languages.en.menu]
+    [[languages.en.menu.main]]
+      identifier = "about"
+      name       = "About"
+      url        = "/about/"
+
+    [[languages.en.menu.main]]
+      identifier = "blog"
+      name       = "Blog"
+      url        = "/general/"

@@ -24,7 +24,7 @@ theme        = "hello-friend-ng"
   # Show a global language switcher in the navigation bar
   enableGlobalLanguageMenu = true
   defaultContentLanguage = 'de'
-
+  # defaultContentLanguageInSubdir = false
   avatar = "images/profile.jpg"
 
   # Math support
@@ -75,6 +75,7 @@ theme        = "hello-friend-ng"
 [languages]
   [languages.de]
     languageCode = "de"
+    weight = 1
     title = "Markus Pirke"
     keywords = ""
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
@@ -85,7 +86,7 @@ theme        = "hello-friend-ng"
 
     [languages.de.params.logo]
       logoText = "cd $HOME"
-      logoHomeLink = "/de"
+      logoHomeLink = ""
 
   [languages.de.menu]
     [[languages.de.menu.main]]
@@ -99,6 +100,7 @@ theme        = "hello-friend-ng"
       url        = "/general/"
 
   [languages.en]
+    weight = 2
     languageCode = "en-us"
     title = "Markus Pirke"
     keywords = ""
@@ -110,7 +112,7 @@ theme        = "hello-friend-ng"
 
     [languages.en.params.logo]
       logoText = "cd $HOME"
-      logoHomeLink = "/en"
+      logoHomeLink = ""
   [languages.en.menu]
     [[languages.en.menu.main]]
       identifier = "about"
